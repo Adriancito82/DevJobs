@@ -314,3 +314,17 @@ article {
     font-weight: 500;
   }
 }
+
+/*Selectores de Empleo*/
+
+select {
+  background-color: var(--input-bg);
+  color: var(--text-secondary);
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px var(--shadow);
+  padding: 0.7rem;
+  margin: 0.5rem 0;
+  margin-left: 0.5rem;
+  gap: 0.5rem;
+}

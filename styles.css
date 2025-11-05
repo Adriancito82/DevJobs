@@ -310,8 +310,16 @@ article {
     color: var(--text-muted);
   }
 
-  h3 {
+  a, h3 {
     font-weight: 500;
+    text-decoration: none;
+    color: var(--text-primary);
+    font-weight: 500;
+    font-size: 1.125rem;
+
+         &:hover, &:focus {
+            color: var(--primary-light);
+        }
   }
 }
 
@@ -420,6 +428,42 @@ article {
     }
 }
 
+.subir-cv {
+    display: inline-block;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: var(--primary-light);
+    font-weight: 500;
+    transition: color .2s;
+
+    &:hover, &:focus {
+        color: var(--primary-secondary);
+    }
+}
+
+.search-employ {
+    margin-top: 1rem;
+    font-size: .875rem;
+    width: 15rem;
+    height: 3rem;
+    color: var(--text-muted);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .25rem;
+}
+
+.job-card {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    background: none;
+
+    small {
+        font-size: .875rem;
+        opacity: .75;
+    }
+}
 /*Selectores de Empleo*/
 
 select {

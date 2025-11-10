@@ -460,6 +460,7 @@ article {
         opacity: .75;
     }
 }
+
 /*Selectores de Empleo*/
 
 select {
@@ -472,4 +473,13 @@ select {
   margin: 0.5rem 0;
   margin-left: 0.5rem;
   gap: 0.5rem;
+}
+
+.button-apply-job {
+    background: #09f;
+
+    &.is-applied {
+        background: #4caf50;
+        pointer-events: none;
+    }
 }

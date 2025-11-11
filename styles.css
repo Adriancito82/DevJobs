@@ -454,6 +454,7 @@ article {
     flex-direction: column;
     gap: .5rem;
     background: none;
+    border-bottom: var(--primary) 2px solid;
 
     small {
         font-size: .875rem;
@@ -481,5 +482,27 @@ select {
     &.is-applied {
         background: #4caf50;
         pointer-events: none;
+    }
+}
+
+.job-req{
+    list-style: none;
+    color: var(--text-muted);
+    display: flex;
+    flex-direction: column;
+
+
+    h3 {
+        color: var(--text-primary);
+        margin-bottom: 1rem;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+    }
+    svg {
+        color: var(--primary-hover);
+        background: none;
     }
 }

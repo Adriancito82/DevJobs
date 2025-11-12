@@ -433,6 +433,7 @@ article {
     width: 13rem;
     height: 2.5rem;
     color: var(--text-muted);
+    margin-left: 50%;
 }
 
 .subir-cv {
@@ -454,7 +455,7 @@ article {
     flex-direction: column;
     gap: .5rem;
     background: none;
-    border-bottom: var(--primary) 2px solid;
+    /*border-bottom: var(--primary) 2px solid;*/
 
     small {
         font-size: .875rem;
@@ -478,6 +479,8 @@ select {
 
 .button-apply-job {
     background: #09f;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
 
     &.is-applied {
         background: #4caf50;

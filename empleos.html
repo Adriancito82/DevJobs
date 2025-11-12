@@ -51,7 +51,7 @@
                 </div>
 
                 <div class="search-filters">
-                    <select name="tecnology" id="tecnology">
+                    <select name="tecnology" id="filter-tecnology">
                         <option value="">Tecnología</option>
                         <option value="html">HTML</option>
                         <option value="css">CSS</option>
@@ -64,7 +64,7 @@
                         <option value="go">Go</option>
                         <option value="typescript">TypeScript</option>
                     </select>
-                    <select name="location" id="location">
+                    <select name="location" id="filter-location">
                         <option value="">Ubicación</option>
                         <option value="españa">España</option>
                         <option value="eeuu">EEUU</option>
@@ -78,7 +78,7 @@
                         <option value="presencial">Presencial</option>
                         <option value="hibrido">Híbrido</option>
                     </select>
-                    <select name="experience-level" id="experience-level">
+                    <select name="filter-experience-level" id="experience-level">
                         <option value="">Nivel de experiencia</option>
                         <option value="junior">Junior</option>
                         <option value="mid">Mid-level</option>
@@ -92,7 +92,7 @@
         <section>
             <h1>Resultados de búsqueda</h1>
             <div class="jobs-listings">
-                <article class="job-listing-card">
+                <article data-modalidad="remoto" class="job-listing-card">
                     <div>
                         <a href="info-empleo.html">
                             <h3>Ingeniero de DevOps</h3>
@@ -105,7 +105,7 @@
                     <button class="button-apply-job">Aplicar</button>
                 </article>
 
-                <article class="job-listing-card">
+                <article data-modalidad="españa" class="job-listing-card">
                     <div>
                         <a href="info-empleo.html">
                             <h3>Desarrollador de Aplicaciones Móviles</h3>
@@ -118,7 +118,7 @@
                     <button class="button-apply-job">Aplicar</button>
                 </article>
 
-                <article class="job-listing-card">
+                <article data-modalidad="remoto" class="job-listing-card">
                     <div>
                         <a href="info-empleo.html">
                             <h3>Ingeniero de Software</h3>
@@ -131,7 +131,7 @@
                     <button class="button-apply-job">Aplicar</button>
                 </article>
 
-                <article class="job-listing-card">
+                <article data-modalidad="presencial" class="job-listing-card">
                     <div>
                         <a href="info-empleo.html">
                             <h3>Analista de Datos</h3>

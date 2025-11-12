@@ -30,3 +30,19 @@ document.addEventListener('click', (event) => {
         boton.disabled = true;
     }
 });
+
+const filter = document.querySelector('#filter-location');
+const jobs = document.querySelectorAll('.job-listing-card');
+
+filter.addEventListener('change', () => {
+    const selectedLocation = filter.value;
+    jobs.forEach(job => {
+        const jobLocation = job.getAttribute('data-modalidad');
+        if (selectedLocation === '' || jobLocation === selectedLocation) {
+            job.style.display = 'flex';
+        } else {
+            job.style.display = 'none';
+        }
+    });
+
+});

@@ -19,3 +19,14 @@ document.addEventListener('click', (event) => {
         boton.disabled = true;
     }
 });
+
+// Actualización con la nueva clase 'apply-job'
+document.addEventListener('click', (event) => {
+    // Verifica si el elemento clicado es un botón de aplicar empleo
+    if (event.target.classList.contains('apply-job')) {
+        const boton = event.target;
+        boton.classList.add('is-applied');
+        boton.textContent = '¡Aplicado!';
+        boton.disabled = true;
+    }
+});

@@ -455,7 +455,8 @@ article {
     flex-direction: column;
     gap: .5rem;
     background: none;
-    /*border-bottom: var(--primary) 2px solid;*/
+    box-shadow: none;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
 
     small {
         font-size: .875rem;
@@ -481,6 +482,17 @@ select {
     background: #09f;
     margin-bottom: 1rem;
     margin-left: 1rem;
+
+    &.is-applied {
+        background: #4caf50;
+        pointer-events: none;
+    }
+}
+
+.apply-job {
+   background: #09f;
+    margin-bottom: 1rem;
+    margin-left: 50%;
 
     &.is-applied {
         background: #4caf50;

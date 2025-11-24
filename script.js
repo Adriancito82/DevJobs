@@ -42,3 +42,10 @@ filter.addEventListener('change', () => {
         job.classList.toggle('is-hidden', !isShown);
     });
 });
+
+
+fetch(./data.json)
+    .then((response) => {
+        return response.json();
+    })
+

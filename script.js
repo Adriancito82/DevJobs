@@ -38,11 +38,7 @@ filter.addEventListener('change', () => {
     const selectedLocation = filter.value;
     jobs.forEach(job => {
         const jobLocation = job.getAttribute('data-modalidad');
-        if (selectedLocation === '' || jobLocation === selectedLocation) {
-            job.style.display = 'flex';
-        } else {
-            job.style.display = 'none';
-        }
+        const isShown = selectedLocation === '' || jobLocation === selectedLocation;
+        job.classList.toggle('is-hidden', !isShown);
     });
-
 });

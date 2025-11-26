@@ -5,11 +5,30 @@ class DevJobsAvatar extends HTMLElement {
         this.attachShadow({ mode: 'open' });
     }
 
+    createUrl( service, username) {
+        return `https://unavatar.io/${service}/${username}`;
+    }
+
     render() {
+
+        const service = this.getAttribute('service') ?? 'github';
+        const username = this.getAttribute('username') ?? 'adriancito82';
+        const size = this.getAttribute('size') ?? '40';
+
+        const url = this.createUrl(service, username);
+
         this.shadowRoot.innerHTML = `
-            <img src="https://unavatar.io/github/adriancito82" alt="Avatar de adrian"
-            class="avatar"
-            style="width: 40px; height: 40px; border-radius: 9999px" />
+            <style>
+                img {
+                    width: ${size}px;
+                    height: ${size}px;
+                    border-radius: 9999px;
+                }
+            </style>
+
+            <img src="${url}"
+            alt="Avatar de ${username}"
+            class="avatar">
         `;
     }
     connectedCallback() {
